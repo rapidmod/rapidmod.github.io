@@ -1,10 +1,9 @@
 title: Rapidmod.io
-email: support@yrapidmod.github.io
+email: support@rapidmod.github.io
 description: Product showcase, blog, and multimedia guides.
-baseurl: "" # leave empty for github.io
+baseurl: "" 
 url: "https://rapidmod.github.io"
 
-# Define Collections for Products and Instructions
 collections:
   products:
     output: true
@@ -12,4 +11,4 @@ collections:
     output: true
 
 markdown: kramdown
-theme: minima # A reliable, clean starting theme
+remote_theme: jekyll/minima
