@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+
+<div class="instruction-text">
+  {{ content }}
+</div>
+
+{% if page.image_path %}
+  <img src="{{ page.image_path | relative_url }}" alt="{{ page.title }}" style="max-width:100%;">
+{% endif %}
+
+{% if page.video_path %}
+  <video controls style="width:100%;">
+    <source src="{{ page.video_path | relative_url }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+{% endif %}
+
+{% if page.audio_path %}
+  <audio controls>
+    <source src="{{ page.audio_path | relative_url }}" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+{% endif %}
